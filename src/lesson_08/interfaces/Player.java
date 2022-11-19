@@ -4,5 +4,9 @@ public interface Player {
     void takeCard(Card card);
     int countValuesOfAllCardsOnHand();
     boolean needCard();
+
+    boolean isCroupier();
+
     void showCardsOnHands();
+
 }

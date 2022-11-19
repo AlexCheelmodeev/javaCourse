@@ -1,7 +1,9 @@
 package lesson_08.interfaces;
 
+import lesson_08.modeles.PlayerImpl;
+
 public interface GameBJ {
-    void addPlayerInGame(Player player);
+    void addPlayerInGame(PlayerImpl player);
 
     void get2CardOnHand();
 
