@@ -2,11 +2,10 @@ package HM08.DZ02;
 
 public class Goods {
     private String name;
-    private int price;
+    private double price;
     private double rating;
 
-
-    public Goods(String name, int price, double rating) {
+    public Goods(String name, double price, double rating) {
         this.name = name;
         this.price = price;
         this.rating = rating;
@@ -20,11 +19,11 @@ public class Goods {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

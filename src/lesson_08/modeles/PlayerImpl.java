@@ -53,7 +53,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public boolean isCroupier() {
-        return false;
+        return true;
     }
 
     @Override
