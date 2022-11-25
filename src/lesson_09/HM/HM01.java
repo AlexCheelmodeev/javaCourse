@@ -9,8 +9,10 @@ public class HM01 {
         for (int i = 0; i < 5; i++) {
             arrayList.add(i);
         }
-        arrayList.size();
+        System.out.println(arrayList.size());
 
-        System.out.println(arrayList);
+        for(int i = 0; i < 5; i++){
+            System.out.println(arrayList.get(i));
+        }
     }
 }
