@@ -2,6 +2,7 @@ package lesson_08.modeles;
 
 import lesson_08.interfaces.GameBJ;
 import lesson_08.interfaces.Player;
+import lesson_08.modeles.PlayerImpl;
 
 public class GameBJImpl implements GameBJ {
 
@@ -73,7 +74,7 @@ public class GameBJImpl implements GameBJ {
 
         for (PlayerImpl player:playersInGame) {
             if (player != null && player.isInGame()){
-                System.out.println("Победил игрок :");
+                System.out.println("Победил игрок :" + player.getNameOfPlayer());
                 player.showCardsOnHands();
             }
         }

@@ -27,6 +27,9 @@ public class Main {
         PlayerImpl player1 = new PlayerImpl();
         PlayerImpl player2 = new PlayerImpl();
 
+
+        player1.setNameOfPlayer("Ivan");
+        player2.setNameOfPlayer("Alexander");
         //3. Создать крупье.
         CroupierBJ croupierBJ = new CroupierBJ();
 

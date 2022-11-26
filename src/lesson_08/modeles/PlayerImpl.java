@@ -12,6 +12,7 @@ public class PlayerImpl implements Player {
     Card[] cardsOnHand = new Card[100];
     boolean inGame;
 
+    String nameOfPlayer;
 
 
     //constructor
@@ -51,6 +52,9 @@ public class PlayerImpl implements Player {
         } return false;
     }
 
+
+
+
     @Override
     public boolean isCroupier() {
         return true;
@@ -72,8 +76,12 @@ public class PlayerImpl implements Player {
         this.inGame = inGame;
     }
 
+    public String getNameOfPlayer() {
+        return nameOfPlayer;
+    }
 
-
-
+    public void setNameOfPlayer(String name) {
+        this.nameOfPlayer = name;
+    }
 }
 

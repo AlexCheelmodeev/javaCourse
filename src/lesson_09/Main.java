@@ -1,5 +1,7 @@
 package lesson_09;
 
+import lesson_08.modeles.CardImpl;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -103,5 +105,22 @@ public class Main {
         //13. clear() - удаление всех элеметов коллекции
 
         copyList.clear();
+
+
+
+        ArrayList<CardImpl> cards = new ArrayList<>();
+        CardImpl card1 = new CardImpl("ands", 1);
+        CardImpl card2 = new CardImpl("ands", 1);
+        CardImpl card3 = new CardImpl("ands", 1);
+        CardImpl card4 = new CardImpl("ands", 1);
+        CardImpl card5 = new CardImpl("ands", 1);
+        CardImpl card6 = new CardImpl("ands", 1);
+
+        cards.add(card1);
+        cards.add(card2);
+        cards.add(card3);
+        cards.add(card4);
+        cards.add(card5);
+        cards.add(card6);
     }
 }
