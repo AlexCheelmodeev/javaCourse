@@ -27,10 +27,10 @@ public class HM05 {
         }
         for (int i = 0; i < arrayListCopy.size(); i++) {
            if (arrayListCopy.get(i) == arrayList.get(i)){}
-           else { System.out.println("Первая переменная которая нарушает" + arrayList.get(i));
+           else { System.out.println("Первая переменная которая нарушает " + arrayList.get(i));
            break;}
         }
 
-
+        System.out.println();
     }
 }
