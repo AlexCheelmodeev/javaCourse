@@ -1,10 +1,8 @@
-package lesson_09;
+package lesson_09_10;
 
 import lesson_08.modeles.CardImpl;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 
 public class Main {
     /**
@@ -122,5 +120,11 @@ public class Main {
         cards.add(card4);
         cards.add(card5);
         cards.add(card6);
+
+        list.add(1);
+        list.add(1);
+        list.add(1);
+        list.add(1);
+        list.add(1);
     }
 }

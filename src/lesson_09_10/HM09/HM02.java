@@ -1,4 +1,4 @@
-package lesson_09.HM;
+package lesson_09_10.HM09;
 
 import java.util.ArrayList;
 import java.util.Scanner;
