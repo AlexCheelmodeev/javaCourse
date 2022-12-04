@@ -31,6 +31,5 @@ public class HM05 {
            break;}
         }
 
-        System.out.println();
     }
 }

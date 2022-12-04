@@ -1,6 +1,7 @@
 package lesson_09_10.hash_code;
 
 import java.util.HashSet;
+import java.util.TreeSet;
 
 public class App {
     public static void main(String[] args) {
@@ -28,7 +29,7 @@ public class App {
         Coin coin7 = new Coin(15, 15.2, "Russia", 1992);
 
 
-        HashSet<Coin> coinsCollection = new HashSet<>();
+        TreeSet<Coin> coinsCollection = new TreeSet<>();
         coinsCollection.add(coin1);
         coinsCollection.add(coin2);
         coinsCollection.add(coin3);
