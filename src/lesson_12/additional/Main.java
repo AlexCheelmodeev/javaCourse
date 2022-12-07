@@ -20,6 +20,11 @@ public class Main {
         specialists.add(specialist4);
         specialists.add(specialist5);
 
-        Util.oldFindByName(specialists, "Alex");
+       // specialists.forEach(x -> System.out.println(x));
+
+        //Util.newFindByName(specialists, "Alex").forEach(x -> System.out.println(x));
+
+        Util.newSortByName(specialists).forEach(x -> System.out.println(x));
+        Util.newSortByName(specialists).forEach(System.out::println);
     }
 }

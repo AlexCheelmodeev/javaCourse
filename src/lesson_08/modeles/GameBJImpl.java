@@ -55,8 +55,8 @@ public class GameBJImpl implements GameBJ {
 
         // 2 Если в игре осталься 1 игрок
         if(countPlayersInGame() == 1){
-            System.out.println("Победил игрок :");
             for (PlayerImpl player:playersInGame) {
+                System.out.println("Победил игрок :" + player.getNameOfPlayer());
                 if (player != null && player.isInGame()){
                     player.showCardsOnHands();
                 }
