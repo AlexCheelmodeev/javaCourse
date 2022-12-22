@@ -47,8 +47,7 @@ public class HM5 {
         }
 
 
-        sortWords(str);
-        sortNumbers(nums);
+
 
 
 
