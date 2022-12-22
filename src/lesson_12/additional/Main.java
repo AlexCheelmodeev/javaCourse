@@ -2,6 +2,8 @@ package lesson_12.additional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,11 +22,30 @@ public class Main {
         specialists.add(specialist4);
         specialists.add(specialist5);
 
-       // specialists.forEach(x -> System.out.println(x));
+        // specialists.forEach(x -> System.out.println(x));
 
         //Util.newFindByName(specialists, "Alex").forEach(x -> System.out.println(x));
 
-        Util.newSortByName(specialists).forEach(x -> System.out.println(x));
-        Util.newSortByName(specialists).forEach(System.out::println);
+        // Util.newSortByName(specialists).forEach(x -> System.out.println(x));
+        // Util.newSortByName(specialists).forEach(System.out::println);
+
+        System.out.println(Util.sortBySalary(specialists));
+        Map<Speciality, List<Specialist>> map = Util.groupingBySpecialty(specialists);
+
+        System.out.println(Util.matchAllSpecialistAreDevOps(specialists));
+        System.out.println(Util.matchAllSpecialistSalaryMoreThen10000(specialists));
+
+        // String login;
+
+        Optional<String> opt = Optional.ofNullable("Hello World!");
+        opt.ifPresent(login -> System.out.println(login.length()));
+
+        String nullName = null;
+        //String name = Optional.ofNullable(nullName).orElse("Пользователь");
+        //System.out.println("Привет, " + name);
+        String name = Optional.ofNullable(nullName).orElseThrow(IllegalAccessError::new);
+
+
+
     }
 }
